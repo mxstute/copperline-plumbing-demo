@@ -532,13 +532,20 @@
     </div>
     <div class="footer-col"><h4>Services</h4><a href="#">Leak Repair</a><a href="#">Drain Cleaning</a><a href="#">Water Heaters</a><a href="#">Repiping</a></div>
     <div class="footer-col"><h4>Company</h4><a href="#">About Us</a><a href="#">Reviews</a><a href="#">Careers</a><a href="#">Blog</a></div>
-    <div class="footer-col"><h4>Contact</h4><a href="#">(803) 555-9876</a><a href="#"><span class="__cf_email__" data-cfemail="b9d0d7dfd6f9dad6c9c9dccbd5d0d7dcc9d5ccd4dbd0d7de97dad6d4">[email&#160;protected]</span></a><a href="#">Columbia, SC</a></div>
+    <div class="footer-col"><h4>Contact</h4><a href="#">(803) 555-9876</a><a href="#">info@copperlineplumbing.com</a><a href="#">Columbia, SC</a></div>
   </div>
   <div class="footer-bottom">&copy; 2026 Copperline Plumbing LLC. All rights reserved. | Licensed, Bonded & Insured | SC License #P-98765</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        setTimeout(() => entry.target.c
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
